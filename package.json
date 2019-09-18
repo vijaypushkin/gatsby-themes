@@ -1,0 +1,18 @@
+{
+  "name": "@vijaypushkin/gatsby-themes",
+  "description": "My open-source collection of Gatsby themes",
+  "author": "Vijay Pushkin <mail@vijaypushkin.me>",
+  "private": true,
+  "workspaces": [
+    "themes/*",
+    "examples/*"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "lerna": "^3.15.0"
+  }
+}
