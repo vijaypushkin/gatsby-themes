@@ -7,9 +7,10 @@ type ProjectCardProps = {
   title: string
   children: React.ReactNode
   bg: string
+  bgFit?: string
 }
 
-const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
+const ProjectCard = ({ link, title, children, bg, bgFit }: ProjectCardProps) => (
   <a
     href={link}
     target="_blank"
@@ -24,6 +25,7 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
       py: [4, 5],
       color: `white`,
       background: bg || `none`,
+      backgroundPosition: bgFit || `center`,
       transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
       "&:hover": {
         color: `white !important`,

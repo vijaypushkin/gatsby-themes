@@ -37,12 +37,14 @@ const Footer = () => {
           sx={{ ml: 2 }}
           href="https://github.com/vijaypushkin/gatsby-themes"
         >
-          Theme
+          Built
         </Styled.a>
-        <div sx={{ mx: 1 }}>by</div>
+        <div sx={{ mx: 1 }}>with</div>
         {` `}
-        <Styled.a aria-label="Link to the theme author's website" href="https://vijaypushkin.me">
-          Vijay Pushkin
+        <Styled.a aria-label="Link to the theme author's website">
+          <span role="img" aria-label="love">
+            💕
+          </span>
         </Styled.a>
       </Flex>
     </ThemeFooter>
